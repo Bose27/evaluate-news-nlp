@@ -49,7 +49,7 @@ app.post("/sendText", function (req, res) {
 
   textapi.sentiment(
     {
-      text: req.body.formText,
+      url: req.body.formText,
     },
     function (error, response) {
       if (error === null) {
