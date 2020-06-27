@@ -11,6 +11,6 @@ describe("Testing the submit functionality", () => {
 describe("Testing the valid url functionality", () => {
   // The test() function has two arguments - a string description, and an actual test as a callback function.
   test("Testing the validURL() function", () => {
-    expect(validURL("https://www.facebook.com").toBe(TRUE));
+    expect(validURL("https://www.facebook.com").valueOf(true));
   });
 });

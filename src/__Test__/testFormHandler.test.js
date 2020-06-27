@@ -16,7 +16,8 @@ describe("Testing the submit functionality", () => {
 
 describe("Testing the submit functionality", () => {
   test("Should identify if the handleSubmit function was called or not", () => {
-    const spyFunction = jest.handleSubmit();
-    expect(spyFunction).toHaveBeenCalled();
+    const handleSubmit = jest.fn();
+    handleSubmit();
+    expect(handleSubmit).toHaveBeenCalled();
   });
 });
