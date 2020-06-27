@@ -18,6 +18,7 @@ function handleSubmit(e) {
     })
       // Sends a JSON response composed of the specified data
       .then((res) => res.json())
+      .catch((err) => alert(err))
       .then(function (response) {
         console.log("Aylien results listed below");
         console.log(response);
@@ -30,7 +31,8 @@ function handleSubmit(e) {
           response.subjectivity;
         document.getElementById("subjectivity_confidence").innerHTML =
           response.subjectivity_confidence;
-      });
+      })
+      .catch((err) => alert(err));
   }
 }
 
